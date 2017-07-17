@@ -1,0 +1,206 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 60px;
+    display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+  	-webkit-box-pack: center;
+  	-moz-box-pack: center;
+  	-ms-flex-pack: center;
+  	-webkit-justify-content: center;
+  	justify-content: center;
+  	-webkit-box-align: center;
+  	-moz-box-align: center;
+  	-ms-flex-align: center;
+  	-webkit-align-items: center;
+  	align-items: center; 
+    overflow: hidden;
+    background-color: #31353D;
+}
+
+.nav{
+    width: 120px;
+    height: 100%;
+    background: #92CDCF;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu{
+    position: relative;
+}
+
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    left: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.menu li {
+    text-shadow: 1px 1px 0px rgba(27, 38, 48, 0.3);
+    text-align: center;
+    height: 100px;
+    font-family:serif
+    cursor: pointer;
+}
+
+@keyframes menuHover {
+from {opacity: 0; margin-top: 40px}
+to {opacity: 1; margin-top: 60px}
+}
+
+.menu li div.hover{
+    width: 100%;
+    height: 100px;
+    color: #fafafa;
+    font-size: 12px;
+    text-align: center;
+    opacity: 0;
+    padding-top: 55px;
+    -webkit-transition: all 0.2s ease;;
+    -moz-transition: all 0.2s ease;;
+    -o-transition: all 0.2s ease;;
+    transition: all 0.2s ease;
+}
+
+.menu li div.hover:hover{
+    opacity: 1;
+    padding-top: 65px;
+}
+.menu li.active div.hover:hover{
+    opacity: 1;
+    padding-top: 65px;
+    color: #92CDCF;
+}
+
+
+.menu li.active{
+    background: #31353D;
+    text-align: center;
+    color: #92CDCF;
+    text-shadow: 1px 1px 0px #1B2630;
+}
+.menu li.active span.glyphicon{
+    color: #92CDCF;
+}
+
+.menu li a{
+    font-size: 20px;
+    height: 100px;
+    color: #fafafa;
+    text-decoration: none;
+    position: relative;
+    left: 0;
+}
+
+.menu li a span{
+    font-size: 20px;
+    color: #fafafa;
+    text-decoration: none;
+    position: absolute;
+    padding-top: 40px;
+    width: 120px;
+    left: 0;
+}
+
+.center {
+    text-shadow: 1px 1px 0px #1B2630;
+    font-size: 3em;
+    font-family: japanese;
+    color: #92CDCF;
+}
+
+.text{
+    cursor: pointer;
+}
+
+.logo{
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+}
+
+.logo img{
+    width: 100px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+::selection {
+   background: transparent;
+}
+::-moz-selection {
+   background: transparent;
+}
+
+.links{
+    opacity: 0;
+    display: none;
+    margin-top: 50%;
+    font-size: 50px;
+    cursor: pointer;
+    font-family: "Arial";
+}
+
+@font-face {
+    font-family: japanese; /* Имя шрифта */
+    src: url(prn.otf); /* Путь к файлу со шрифтом */
+}
+
+
+.login_form{
+    text-shadow: 1px 1px 0px rgba(27, 38, 48, 0.3);
+    color: #fafafa;
+    width: 300px;
+    background: #31353D;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
+
+.login_form h1{
+    padding: 10px 10px 20px 10px;
+    font-family: sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 0px #1B2630;
+    color: #92CDCF;
+}
+
+.login_form input{
+    margin-top: 5px;
+    width: 260px;
+    height: 50px;
+    border-radius: 3px;
+    background-color: #31353D;
+    border: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    text-shadow: 1px 1px 0px #1B2630;
+    color: #92CDCF;
+    font-size: 20px;
+    padding-left: 10px;
+    font-family: sans-serif;
+    -webkit-transition: all 0.2s ease;;
+    -moz-transition: all 0.2s ease;;
+    -o-transition: all 0.2s ease;;
+    transition: all 0.2s ease;
+}
+
+.login_form input:focus{
+    outline: none;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
