@@ -24,6 +24,8 @@ html,body{
   	align-items: center; 
     overflow: hidden;
     background-color: #31353D;
+    min-width: 800px;
+    min-height: 650px;
 }
 
 .nav{
@@ -33,6 +35,10 @@ html,body{
     position: fixed;
     top: 0;
     left: 0;
+    min-height: 650px;
+    -webkit-box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.1);
+    box-shadow: 00px 0px 10px 10px rgba(0,0,0,0.1);
 }
 
 .menu{
@@ -122,6 +128,7 @@ to {opacity: 1; margin-top: 60px}
 
 .text{
     cursor: pointer;
+	font-family: sans-serif;
 }
 
 .logo{
@@ -132,8 +139,6 @@ to {opacity: 1; margin-top: 60px}
 
 .logo img{
     width: 100px;
-    padding-left: 20px;
-    padding-bottom: 15px;
 }
 
 ::selection {
@@ -161,7 +166,7 @@ to {opacity: 1; margin-top: 60px}
 .login_form{
     text-shadow: 1px 1px 0px rgba(27, 38, 48, 0.3);
     color: #fafafa;
-    width: 300px;
+    width: 400px;
     background: #31353D;
     padding: 20px;
     border-radius: 5px;
@@ -182,7 +187,7 @@ to {opacity: 1; margin-top: 60px}
 .login_form input{
     margin-top: 5px;
     width: 260px;
-    height: 50px;
+    height: 40px;
     border-radius: 3px;
     background-color: #31353D;
     border: 0;
@@ -203,4 +208,148 @@ to {opacity: 1; margin-top: 60px}
     -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
     -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
+
+.login_form span.glyphicon{
+	font-size: 20px;
+	color: #92CDCF;
+	margin: 20px;
+	left: 0;
+	margin-right: 10px;
+}
+
+.container{
+    width: 650px;
+    min-width: 650px;
+    margin-left: 120px;
+	margin-right: -300px;
+	opacity: 0;
+    background: #31353D;
+-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    position: relative;
+    padding: 20px;
+}
+
+.container img.game_logo{
+    width: 400px;
+    margin: 20px 105px;
+}
+
+.container p{
+	font-size: 30px;
+	text-align: center;
+	padding: 20px;
+	color: #fafafa;
+}
+
+.button{
+    width: 300px;
+	height: 40px;
+	display: block;
+    text-align: center;
+	margin: 20px auto 10px auto;
+    background: #31353D;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    padding: 10px;
+	color: #92CDCF;
+    font-size: 16px;
+    text-shadow: 1px 1px 0px #1B2630;
+	-webkit-transition: all 0.4s ease;;
+    -moz-transition: all 0.4s ease;;
+    -o-transition: all 0.4s ease;;
+    transition: all 0.4s ease;
+    text-decoration: none;
+	cursor: pointer;
+}
+
+.button:hover{
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+	text-decoration: none;
+	color: #92CDCF;
+}
+
+p.text{
+	text-align: left;
+	font-size: 20px;
+}
+
+.container img.ava{
+	width: 195px;
+	height: 195px;
+	left: 0;
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 0;
+}
+
+.container table{
+	width: 100%;
+}
+
+.container table tr{
+	width: 10px;
+	font-size: 16px;
+}
+
+.container table tr{
+	margin-bottom: 10px;
+	color:#fafafa;
+	text-shadow: 1px 1px 0px #1B2630;
+	-webkit-transition: all 0.4s ease;;
+    -moz-transition: all 0.4s ease;;
+    -o-transition: all 0.4s ease;;
+    transition: all 0.4s ease;
+}
+.container table tr:hover{
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
+
+.container table tr.head{
+	width: 10px;
+	font-size: 16px;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+	margin-bottom: 20px;
+	text-align: center;
+	color: #92CDCF;
+}
+
+.container table td{
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	padding: 10px 20px;
+}
+
+.container table tr.you{
+	width: 10px;
+	font-size: 16px;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+	margin-bottom: 20px;
+	color: #92CDCF;
+}
+
+.container table tr.head td{
+	border-right: 0;
+}
+
+.container table tr.you td{
+	border-right: 0;
+}
+
+.contrainer table tr tr.head td{
+	border-right: 0px;
+}
+
+.container table td:last-child{
+	border-right: 0;
 }

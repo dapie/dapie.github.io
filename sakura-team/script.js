@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	$(".container").animate({opacity: 1, marginRight: "0"}, 500)
     $(".text").click(function() {
         $(".center").animate({opacity: 0, marginBottom: "25%"}, 600, function(){
             $(".text").css({display: "none"});
