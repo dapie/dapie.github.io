@@ -26,6 +26,7 @@ html,body{
     background-color: #31353D;
     min-width: 800px;
     min-height: 650px;
+    font-family: sans-serif;
 }
 
 .nav{
