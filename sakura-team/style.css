@@ -56,7 +56,6 @@ html,body{
 	width: 100px;
     height: 120px;
     text-shadow: 1px 1px 0px rgba(27, 38, 48, 0.3);
-    text-align: center;
     width: 100px;
     font-family:serif
     cursor: pointer;
@@ -95,7 +94,6 @@ to {opacity: 1; margin-top: 60px}
 
 .menu li.active{
     background: #31353D;
-    text-align: center;
     color: #92CDCF;
     text-shadow: 1px 1px 0px #1B2630;
 }
@@ -219,6 +217,11 @@ to {opacity: 1; margin-top: 60px}
 	margin: 20px;
 	left: 0;
 	margin-right: 10px;
+}
+
+.glyphicon{
+	top: 0;
+	text-align: center;
 }
 
 .container{
