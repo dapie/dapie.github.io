@@ -257,7 +257,7 @@ to {opacity: 1; margin-top: 60px}
 	height: 40px;
 	display: block;
     text-align: center;
-	margin: 20px auto 10px auto;
+	margin: 10px auto 0px auto;
     background: #31353D;
 	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
     -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
@@ -272,6 +272,13 @@ to {opacity: 1; margin-top: 60px}
     transition: all 0.4s ease;
     text-decoration: none;
 	cursor: pointer;
+}
+
+.login_form h1{
+	cursor: pointer;
+}
+.login_form h1:hover{
+	text-decoration: none;
 }
 
 .button:hover{
@@ -360,4 +367,51 @@ p.text{
 
 .container table td:last-child{
 	border-right: 0;
+}
+
+.account_info .player_pic{
+	width: 300px;
+	height: 300px;
+	margin: auto;
+	border-radius: 150px;
+	border: 5px solid #92CDCF;
+	overflow: hidden;
+	position: relative;
+}
+
+.account_info .player_pic img{
+	height: 100%;
+	position: absolute;
+}
+
+.account_info p{
+	font-family: sans-serif;
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+	color: #92CDCF;
+}
+
+.account_info p.main_info{
+	margin:20px 0px 10px;
+}
+
+.account_info p.main_info span.name{
+	font-size: 24px;
+}
+
+.account_info p span{
+	font-size: 30px;
+	padding: 0;
+	margin: 0;
+}
+
+.account_info p span.rank{
+	font-size: 18px;
+	padding: 0;
+	margin: 0;
+}
+
+.account_info a.button{
+	margin-top: 30px;
 }
