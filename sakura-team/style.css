@@ -21,11 +21,10 @@ html,body{
   	-ms-flex-align: center;
   	-webkit-align-items: center;
   	align-items: center; 
-    background-color: #31353D;
-    min-width: 730px;
-    min-height: 960px;
+    	background-color: #31353D;
+    	min-width: 730px;
+    	min-height: 960px;
 	font-family: sans-serif;
-	overflow : scroll;
 }
 
 .nav{
