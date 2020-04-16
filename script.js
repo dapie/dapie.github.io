@@ -109,7 +109,7 @@ function init(){
 }
 
 function setTheme(theme){
-    document.body.className = theme === "dark" ? "" : "light"  
+    document.body.className = theme === "light" ? "light" : "dark"  
     localStorage.setItem('theme', theme)
 }
 
