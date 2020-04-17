@@ -29,25 +29,25 @@ const commands = {
     github: {
         info: "Open my GitHub page",
         executeText: "Open GitHub...",
-        func: () => {openLink("https://github.com/dapie")},
+        func: () => {window.open("https://github.com/dapie")},
         show: true
     },
     vk: {
         info: "Open my VK page",
         executeText: "Open VK...",
-        func: () => {openLink("https://vk.com/dapie")},
+        func: () => {window.open("https://vk.com/dapie")},
         show: true
     },
     telegram: {
         info: "Open my Telegram link",
         executeText: "Open Telegram...",
-        func: () => {openLink("https://teleg.run/dapie")},
+        func: () => {window.open("https://teleg.run/dapie")},
         show: true
     },
     instagram: {
         info: "Open my Instagram page",
         executeText: "Open Instagram...",
-        func: () => {openLink("https://www.instagram.com/_dapie/")},
+        func: () => {window.open("https://www.instagram.com/_dapie/")},
         show: true
     },
     help: {
@@ -111,11 +111,6 @@ function init(){
 function setTheme(theme){
     document.body.className = theme === "light" ? "light" : "dark"  
     localStorage.setItem('theme', theme)
-}
-
-function openLink(url){
-    const win = window.open(url, '_blank');
-    win.focus();
 }
 
 function checkCommand(command){
