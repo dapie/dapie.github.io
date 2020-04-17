@@ -33,9 +33,13 @@ body.light *{
     text-align: center;
 }
 
-.links a{
+.links input{
     text-decoration: underline;
     cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
 }
 
 .input{

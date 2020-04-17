@@ -88,14 +88,14 @@ function init(){
         printText(links, linksElement, 40, () => {
             linksElement.innerHTML = links
                 .split(" - ")
-                .map((el) => `<a onclick='checkCommand(this.innerText)'>${el}</a>`)
+                .map((el) => `<input type="button" onclick='checkCommand(this.value)' value=${el}>`)
                 .join(" - ")
             inputElement.parentNode.style.display = "flex";
             inputElement.focus()
             inputElement.onblur = () => setTimeout(() => inputElement.focus())
             inputElement.onkeypress = (e) => {
                 if(e.keyCode === 13) {
-                    checkCommand(e.target.value)
+                    checkCommand(e.target.value.toLowerCase())
                     return false
                 }
             }
