@@ -12,8 +12,7 @@ const logo = `   ..                                    .
     ""       ^Y"   ^Y'     888 ^         ""      "YP'    
                            *8E                           
                            '8>                           
-                            "                            
-                            ` + /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+                            "                            `
 
 const error404 = `____________/\\\\\\________/\\\\\\\\\\\\\\_______________/\\\\\\____        
  __________/\\\\\\\\\\______/\\\\\\/////\\\\\\___________/\\\\\\\\\\____       
@@ -25,30 +24,34 @@ const error404 = `____________/\\\\\\________/\\\\\\\\\\\\\\_______________/\\\\
         ___________\\/\\\\\\_____\\///\\\\\\\\\\\\\\/_____________\\/\\\\\\____ 
          ___________\\///________\\///////_______________\\///_____
 `
-
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 const commands = {
     github: {
         info: "Open my GitHub page",
         executeText: "Open GitHub...",
         func: () => {window.open("https://github.com/dapie", "_blank")},
+        link: "https://github.com/dapie",
         show: true
     },
     vk: {
         info: "Open my VK page",
         executeText: "Open VK...",
         func: () => {window.open("https://vk.com/dapie", "_blank")},
+        link: "https://vk.com/dapie",
         show: true
     },
     telegram: {
         info: "Open my Telegram link",
         executeText: "Open Telegram...",
         func: () => {window.open("https://teleg.run/dapie", "_blank")},
+        link: "https://teleg.run/dapie",
         show: true
     },
     instagram: {
         info: "Open my Instagram page",
         executeText: "Open Instagram...",
         func: () => {window.open("https://www.instagram.com/_dapie/", "_blank")},
+        link: "https://www.instagram.com/_dapie/",
         show: true
     },
     help: {
@@ -89,7 +92,7 @@ function init(){
         printText(links, linksElement, 40, () => {
             linksElement.innerHTML = links
                 .split(" - ")
-                .map((el) => `<input type="button" onclick='checkCommand(this.value)' value=${el}>`)
+                .map((el) => `<a ${isSafari && commands[el].link ? `href='${commands[el].link}'` : ""} onclick='checkCommand(this.innerText)' target="_blank"'>${el}</a>`)
                 .join(" - ")
             inputElement.parentNode.style.display = "flex";
             inputElement.focus()
