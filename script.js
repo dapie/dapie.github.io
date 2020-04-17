@@ -29,25 +29,25 @@ const commands = {
     github: {
         info: "Open my GitHub page",
         executeText: "Open GitHub...",
-        func: () => {window.open("https://github.com/dapie")},
+        func: () => {window.open("https://github.com/dapie", "_blank")},
         show: true
     },
     vk: {
         info: "Open my VK page",
         executeText: "Open VK...",
-        func: () => {window.open("https://vk.com/dapie")},
+        func: () => {window.open("https://vk.com/dapie", "_blank")},
         show: true
     },
     telegram: {
         info: "Open my Telegram link",
         executeText: "Open Telegram...",
-        func: () => {window.open("https://teleg.run/dapie")},
+        func: () => {window.open("https://teleg.run/dapie", "_blank")},
         show: true
     },
     instagram: {
         info: "Open my Instagram page",
         executeText: "Open Instagram...",
-        func: () => {window.open("https://www.instagram.com/_dapie/")},
+        func: () => {window.open("https://www.instagram.com/_dapie/", "_blank")},
         show: true
     },
     help: {
